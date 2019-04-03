@@ -12,7 +12,7 @@ The functionality allows you to enter data using the buttons as in the old push-
 
     ```sh
     # clone a repository
-    $ git clone https://github.com/anarbabashov/Phone-Keypad.git
+    $ git clone https://github.com/anarbabashov/anarbabashov.github.io.git
     ```
 
 1.  **Install dependencies.**
@@ -20,7 +20,7 @@ The functionality allows you to enter data using the buttons as in the old push-
     Navigate into your new site’s directory and install it up.
 
     ```sh
-    cd Phone-Keypad/
+    cd anarbabashov.github.io-master/
     npm install
     npm start
     ```
