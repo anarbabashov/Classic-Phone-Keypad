@@ -10,14 +10,11 @@ export function calcInputDisplay() {
   }, 600))
 
   return ({buttonId, currentData, inputValue}) => {
-
-    console.log(currentData.added);
     clearTimeout(timeoutID)
     timeoutID = timeout()
     if (isFlagEnable && cashButtonValue === buttonId && currentData.added.length) {
         if (currentData.added[addedNumber + 1]) {
             addedNumber = addedNumber + 1
-            console.log(addedNumber);
         } else {
             addedNumber = 0
         }
