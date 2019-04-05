@@ -13,12 +13,13 @@ export function calcInputDisplay() {
     clearTimeout(timeoutID)
     timeoutID = timeout()
     if (isFlagEnable && cashButtonValue === buttonId && currentData.added.length) {
-        if (currentData.added[addedNumber + 1]) {
+      var returnValue = inputValue.slice('', inputValue.length - 1) + currentData.added[addedNumber]  
+      if (currentData.added[addedNumber + 1]) {
             addedNumber = addedNumber + 1
         } else {
             addedNumber = 0
         }
-        return (inputValue.slice('', inputValue.length - 1) + currentData.added[addedNumber])
+        return (returnValue)
     } else {
         isFlagEnable = true
         cashButtonValue = buttonId
